@@ -34,6 +34,8 @@ ul {
   margin: 0 auto;
 }
 
+/* Header */
+
 header {
   background-color: #FFF8F3;
 }
@@ -68,6 +70,8 @@ header {
   top: -3px;
 }
 
+/* Footer */
+
 .footer {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -92,4 +96,12 @@ header {
 .footer__social {
   display: flex;
   gap: 15px;
+}
+
+
+@media (max-width: 1000px){
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
