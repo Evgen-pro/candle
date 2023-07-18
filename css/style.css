@@ -11,7 +11,6 @@ html {
 body {
   color:  #000;
   font-family: 'Comfortaa', cursive;
-  /* font-family: 'Yeseva One', cursive; */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -27,6 +26,13 @@ ul {
   list-style: none;
 }
 
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1180px;
   padding-left: 10px;
@@ -38,10 +44,7 @@ ul {
   display: none;
   width: 30px;
   height: 25px;
-  border: none;
   background-color: transparent;
-  padding: 0;
-  border-radius: 0;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -55,7 +58,7 @@ ul {
 
 /* Header */
 
-header {
+.header {
   background-color: #FFF8F3;
 }
 
@@ -89,6 +92,62 @@ header {
   top: -3px;
 }
 
+.main {
+  background-color: #FFF8F3;
+  overflow-x: clip;
+}
+
+.top {
+  padding: 40px 0 150px;
+}
+
+.top__inner {
+  position: relative;
+}
+
+.top__content {
+  width: 370px;
+  padding: 150px 0 250px;
+}
+
+.top__title {
+  font-size: 38px;
+  font-family: 'Yeseva One', cursive;
+  margin-bottom: 15px;
+}
+
+.top__text {
+  margin-bottom: 48px;
+}
+
+.top__buy {
+  padding: 18px 54px;
+  background-color: #FFBD59;
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.top__img {
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 
 .footer {
@@ -118,10 +177,38 @@ header {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1000px){
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .top__content {
+    width: 333px;
+    padding: 95px 0 70px;
+  }
+  .top__img-l {
+    width: 655px;
+  }
+  .top__img {
+    left: 320px;
+  }
+  .top__text {
+    margin-bottom: 30px;
   }
 }
 
@@ -155,6 +242,20 @@ header {
     left: -14px;
     top: -2px;
     background-size: cover;
+  }
+  .top__content {
+    width: 230px;
+  }
+  .top__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .top__text {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .top__img {
+    left: 180px;
   }
 }
 
@@ -206,3 +307,8 @@ header {
   }
 }
 
+@media (max-width: 480px) {
+  .top__img-l {
+    width: 309px;
+  }
+}
