@@ -309,6 +309,48 @@ button {
 
 @media (max-width: 480px) {
   .top__img-l {
-    width: 309px;
+    width: 300px;
+    left: 167px;
+  }
+  .top__content {
+    width: 180px;
+  }
+  .top__title {
+     font-size: 15px;
+     margin-bottom: 15px;
+      
+  }
+  .top__text {
+    font-size: 8px;
+    margin-bottom: 15px; 
+  }
+  .top__buy {
+    font-size: 10px;
+    padding: 14px 41px;
+  }
+  .top {
+    padding: 30px 0 50px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .top__img-l {
+    width: 185px;
+  }
+  .top__img {
+    left: auto;
+    right: 0;
+
+  }
+  .top__content {
+    width: 200px;
+    padding: 20px 0 0;
+  }
+  .top__title {
+     font-size: 18px;      
+  }
+  .top__text {
+    font-size: 10px;
   }
 }
